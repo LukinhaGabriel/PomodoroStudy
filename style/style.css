@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-feature-settings: "lnum";
+    -moz-font-feature-settings: "lnum";
+    -ms-font-feature-settings: "lnum";
+    -o-font-feature-settings: "lnum";
+}
+
+body{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background: #a39193;
+    overflow-y: hidden;
+}
+
+button{
+    cursor: pointer;
+    color: inherit;
+}
+
+h1, .type, .time{
+    font-family: inherit;
+    font-weight: 100;
+    text-align: center;
+    font-variant-numeric: lining-nums;
+}
+
+h1{
+    font-size: 54px;
+    margin-bottom: 24px;
+    line-height: 64px;
+    color: 	rgb(246,224,181);
+}
+
+.wrap{
+    width: 450px;
+    max-width: 90%;
+    margin-bottom: 25px;
+}
+
+.display-container{
+    width: 100%;
+    background-color: rgb(245, 239, 227);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+
+
+.display{
+    padding: 20px 5px;
+}
+
+.type{
+    display: block;
+    width: 100%;
+    height: 24px;
+    font-size: 24px;
+}
+
+.time{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.buttonRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startimer, .stoptimer{
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 15px;
+    border: none;
+}
+
+.startimer{
+    background-color: 	#eea990;
+}
+
+.stoptimer{
+    background-color: 	#eb9a7d;
+}
+
+
+
+.task input{
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.wrapper-music{
+    width: 100%;
+}
+
+.spotify{
+    border-radius: 8px;
+    width: 100%;
+    height: 80px;
+}
+
+.copyright{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ffffff;
+    font-variant-numeric: lining-nums;
+}
+
+.copyright a{
+    color: inherit;
+    text-decoration: none;
+    font-variant-numeric: inherit;
+}
+
+
+@media screen and (max-width: 900px){
+    .wrap{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    main{
+        margin-top: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 350px){
+    h1{
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+}

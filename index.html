@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Pomodoro Study</h1>
+      <div class="wrapper-time">
+        <div class="display-container">
+          <div class="display">
+            <div class="type"></div>
+            <div class="time"></div>
+          </div>
+          <div class="buttonRow">
+            <button class="startimer">start</button>
+            <button class="stoptimer">stop</button>
+          </div>
+          <div class="task-container">
+            <div class="task">
+              <input
+                type="text"
+                id="pomodoro-clock-task"
+                placeholder="O que você gostaria de realizar?"
+                autocomplete="off"
+                tabindex="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-music">
+          <iframe class="spotify" 
+          src="https://open.spotify.com/embed/artist/7nPBddK18ZCiNbilAnpOoP?utm_source=generator&theme=0" 
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="copyright">
+      <p>© <span class="year"></span>
+      <a href="https://lucasgabrielmoya-nu.vercel.app/" target="_blank">Lucas Gabriel Moya</a>
+      </p>
+    </footer>
+    <script src="./script/main.js"></script>
+    <script src="./script/date.js"></script>
+  </body>
+</html>
